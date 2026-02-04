@@ -38,16 +38,18 @@ def get_stat(values):
     top = max(int(values[0]),int(values[1]),int(values[2]))
     newline = ",".join([str(total),str(average),str(top)])
     return newline
-
  
 
 def getline(source):
     lines = source.split("\n")  
     lines = lines[1:4:1]
+    x = ""
     for i in lines:
         a = gettockens(i)
-        print(a)
+        x = x + "\n" + a
+    print(x)
         #print (i)
+
 
 getline(data)
 
