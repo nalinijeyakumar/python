@@ -1,0 +1,37 @@
+# num_day = {"1":"Monday","2":"Tuesday","3":"Wednesday"}
+
+# print(num_day)
+# print(type(num_day))
+
+# num_day.update({"4":"Thursday"})
+# print(num_day)
+
+# four = num_day.get("4")
+# print(four)
+
+# five = num_day.get("5")
+# print(five)
+
+# day = input("Enter day of the week")
+# print(num_day.get(day))
+
+text = "The flames sawed in the wind and the embers paled and deepened and paled and deepened like the bloodbeat of some living thing eviscerate upon the ground before them and they watched the fire which does contain within it something of men themselves inasmuch as they are less without it and are divided from their origins and are exiles. For each fire is all fires, and the first fire and the last ever to b"
+words = text.split()
+
+counts = {}
+
+for word in words:
+    low = word.lower()
+    count = counts.get(low)
+
+    if count == None:
+        counts.update({low:1})
+    else:
+        counts.update({low:count+1})
+
+print(counts)
+
+numbers = [1,2,3,4,5]
+value = 10
+exists = value in numbers
+print(exists)
