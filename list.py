@@ -20,21 +20,24 @@
 # # # - reverse
 # # # - sort
 
-# # fruits = ["apple","banana","orange"]
-# # fruits.append("strawberry")
+fruits = ["apple","banana","orange"]
+fruits.append("strawberry")
+print(fruits)
 
 
-# # fruits.insert(7,"strawberry")
+# fruits.insert(7,"strawberry")
 
 
 # # fruits.extend([1,2,3])
 
 
-# # fruits.remove("strawberry")
+# fruits.remove("strawberry")
+# print(fruits)
 
-# # fruits.pop()
-# # # fruits.clear()
-# # # fruits.remove("papaya")
+fruits.pop()
+print(fruits)
+# fruits.clear()
+# fruits.remove("papaya")
 
 
 # # # fruits[0] = "strawberry"
@@ -56,20 +59,20 @@
 
 # # print(list_a)
 
-# list_b = [1,2,3]
-# list_c = []
-# size = len(list_b)-1
-# for i in range(size,-1,-1):
-#     x = list_b[i]
-#     list_c.append(x)
-# print(list_c)
+list_b = [1,2,3]
+list_c = []
+size = len(list_b)-1
+for i in range(size,-1,-1):
+    x = list_b[i]
+    list_c.append(x)
+print(list_c)
 
-# # list_c.clear()
+# list_c.clear()
 
-# # for i in range(0,len(list_b),1):
-# #     x = list_b.pop()
-# #     list_c.append(x)
-# # print(list_c)
+for i in range(0,len(list_b),1):
+    x = list_b.pop()
+    list_c.append(x)
+print(list_c)
 
 # #double them in places
 # given_numbers = [1,2,3,4,5]
@@ -89,14 +92,14 @@
 # print(original_order)
 
 # #rotate them in place
-list_order = [1,2,3,4,5]
-size = len(list_order)
-def rotate_number():
-    temp = list_order[size-1] 
-    for i in range(size-1,0,-1):
+# list_order = [1,2,3,4,5]
+# size = len(list_order)
+# def rotate_number():
+#     temp = list_order[size-1] 
+#     for i in range(size-1,0,-1):
            
-        list_order[i] = list_order[i-1]
-        list_order[i-1] = list_order[0]
-    list_order[0] = temp
-rotate_number()
-print(list_order)
+#         list_order[i] = list_order[i-1]
+#         list_order[i-1] = list_order[0]
+#     list_order[0] = temp
+# rotate_number()
+# print(list_order)
